@@ -60,6 +60,7 @@ class play:
             #print()
         #print(self.attacking_paris)
         self.huristic_score = (self.attacking_paris.__len__() - 8)//2
+        self.huristic_score = 28 - self.huristic_score
         print("Data :" + str(self.huristic_score) + " with :" + str(self.queen_pos))
 
     def __repr__(self):                 #will help to print huristic_score when the opject is made to print
@@ -68,24 +69,27 @@ class play:
     def h1_docs(self):                  #try n number of random combination and will tell the minimum huristic_score
         self.random_assignment()
         self.h1()
-        min = self.huristic_score
-        min_data = self.queen_pos
-        for i in range(10000):
+        max = self.huristic_score
+        max_data = self.queen_pos
+        for i in range(1000):
             #print(i)
             self.random_assignment()
             self.h1()
-            if(self.huristic_score < min):
-                min = self.huristic_score
-                min_data = self.queen_pos
+            if(self.huristic_score > max):
+                max = self.huristic_score
+                max_data = self.queen_pos
             else:
                 pass
-        print("We found the Minumum is Archived at :" + str(min) + " with :" + str(min_data))
+        print("We found the Maximum is Archived at :" + str(max) + " with :" + str(max_data))
 
 
 
 
+def main():
+    a = play();
+    a.random_assignment()
+    a.queen_pos
+    a.h1_docs()
 
-a = play();
-a.random_assignment()
-a.queen_pos
-a.h1_docs()
+if __name__ == '__main__':
+    main()
