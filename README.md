@@ -12,10 +12,15 @@ In this Program, we will try to solve 8 queen problem using genetic Algorithm
 	Play Class is used initialise the data_arrays:
 	
 	Variable used :
+		
 		a. box -> Box variable will store the postion of queens in the board. The whole board is zeros matrix and contains 1 in the postion of queens
+		
 		b. queen_pos -> vector of 8 dimention -- this will store the position of queens in the board (value range 0 - 7)
+
 		c. huristic_score --> used to store the fitness score -- where the high fitness score represents more close to the goal (max : 28)
+
 		d. attacking_paris --> will contains the conflicting queen information
 
 #Huristic Functions as fitness function:
+
 1. In huristic function h1, the fitness depends on the number of non conflicting Queen. For this problem ,for each queen , we need to cheack both the diagonal , vertical and horizontal with respect ot the given queen and find the value from fitness. This in turn will be used to calculate probability for selection in genetic algorithm for cross breeding populations.
