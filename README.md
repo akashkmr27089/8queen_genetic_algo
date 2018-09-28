@@ -24,3 +24,8 @@ In this Program, we will try to solve 8 queen problem using genetic Algorithm
 #Huristic Functions as fitness function:
 
 1. In huristic function h1, the fitness depends on the number of non conflicting Queen. For this problem ,for each queen , we need to cheack both the diagonal , vertical and horizontal with respect ot the given queen and find the value from fitness. This in turn will be used to calculate probability for selection in genetic algorithm for cross breeding populations.
+
+
+#Genitic Algorithm
+
+Coming Soon
