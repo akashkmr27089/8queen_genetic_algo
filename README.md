@@ -3,11 +3,11 @@ In this Program, we will try to solve 8 queen problem using genetic Algorithm
 
 8 queen problem. The eight queens problem is the problem of placing eight queens on an 8×8 chessboard such that none of them attack one another (no two are in the same row, column, or diagonal). We will try to solve the problem of Placing queens using Genetic Algorithm.  
 
-#Program Architecture:
+# Program Architecture:
 8 queen Problem is represented as numpy array of 8*8. Initially all 8 queens are placed randomly one at each row uniquely. For solving this Problem, we will be using complete-state formulation, where each state has 8 queens on the board , one per column. 
 
 
-#Classes Used :
+# Classes Used :
 1. Play Class():
 	Play Class is used initialise the data_arrays:
 	
@@ -21,11 +21,11 @@ In this Program, we will try to solve 8 queen problem using genetic Algorithm
 
 		d. attacking_paris --> will contains the conflicting queen information
 
-#Huristic Functions as fitness function:
+# Huristic Functions as fitness function:
 
 1. In huristic function h1, the fitness depends on the number of non conflicting Queen. For this problem ,for each queen , we need to cheack both the diagonal , vertical and horizontal with respect ot the given queen and find the value from fitness. This in turn will be used to calculate probability for selection in genetic algorithm for cross breeding populations.
 
 
-#Genitic Algorithm
+# Genitic Algorithm
 
 Coming Soon
