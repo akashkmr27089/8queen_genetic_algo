@@ -1,4 +1,4 @@
-# 8queen_genetic_algo
+# Solving 8queen Problem using Genetic Algorithm
 In this Program, we will try to solve 8 queen problem using genetic Algorithm 
 
 8 queen problem. The eight queens problem is the problem of placing eight queens on an 8×8 chessboard such that none of them attack one another (no two are in the same row, column, or diagonal). We will try to solve the problem of Placing queens using Genetic Algorithm.  
